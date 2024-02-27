@@ -1,23 +1,25 @@
 #include <stdio.h>
 
-int main(int argc, char const *argv[]) {
+int main() {
   printf("Olá, Mundo\n");
 
-  char nome[30];
-  char sexo;
+  char nome[30], sexo[2];
   int idade;
-  float peso;
+  float peso, tam;
 
+  
   printf("Digite o seu nome: ");
   scanf("%s", &nome);
-  printf("Seu sexo: ");
-  scanf("%s", &sexo);
-  printf("Sua idade: ");
+  printf("Digite sua idade: ");
   scanf("%i", &idade);
-  printf("E seu peso: ");
+  printf("Digite seu peso: ");
   scanf("%f", &peso);
+  printf("Digite seu gênero: ");
+  scanf("%s", &sexo);
+  printf("Digite seu Tamanho: ");
+  scanf("%f", &tam);
 
-  printf("\nNome: %s\nSexo: %c\nIdade: %i\nPeso: %.2f\n", nome, sexo, idade, peso);
+  printf("\nNome: %s \nIdade: %i \nPeso: %.2f \nGênero: %s \nTamanho: %.2f", nome, idade, peso, sexo, tam);
   
   return 0;
 }
